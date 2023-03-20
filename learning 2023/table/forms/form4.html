@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="message.html" method="post">
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="email">Email Id</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="70">
+        <br><br>
+        <label for="searchtext">Search</label>
+        <input type="search" name="searchtext" id="searchtext">
+        <br><br>
+        <label for="address">Address</label>
+        <textarea id="address" rows="6"></textarea> 
+        <br><br>
+        <label for="city">City</label>
+        <select id="city" name="city">
+            <option value="HYD">Hyderabad</option>
+            <option value="DEL">Delhi</option>
+            <option value="BNG">Bangalore</option>
+        </select>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+
+         <label for="interests">Interests</label>
+            <div id="interests">
+            <label><input type="checkbox" name="interests" value="sports">Sports</label>
+            <label><input type="checkbox" name="interests" value="technology">Technology</label>
+            </div>
+        <br><br>
+            <label for="qualification">Highest Qualification</label>
+            <div id="qualifications">
+                <label><input type="radio" name="qualification" value="PHD">PHD</label>
+                <label><input type="radio" name="qualifications" value="masters">Masters</label>
+                <label><input type="radio" name="qualification" value="bachelors">Bachelors</label>
+                </div>
+            <input type="reset" value="reset all inputs">
+            <button type="submit">Submit1</button>
+        <button type="submit" value="submit2">Submit2</button>
+        <!-- this button "submit 3 wont work as kit was out of thge form tags" -->
+    </form>
+    <button type="submit" value="submit3">Submit3</button> 
+</body>
+</html>

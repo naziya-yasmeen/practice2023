@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        div {
+          width: 70%;
+          background-color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          vertical-align: -webkit-baseline-middle;
+             }
+             </style>
+</head>
+       
+<body 
+         bgcolor="grey" align="left">
+    <h2>Survey Form</h2> 
+    
+    <div>
+       
+    <form
+    bgcolor="white" align="justify" method="post" novalidate> 
+        <i><b><u> Let us know how we can improve FreeCodeCamp</i></b></u>
+         <br> 
+        <p> <label for="name">*Name </label>
+        <input type="text" name="name" id="name">
+        </p>
+        <p><label for="email">*Email</label>
+        <input type="email" name="email" id="email">
+        </p>
+        <p> <label for="age"> *Age&nbsp;&nbsp; </label>
+        <input type="number" name="age" id="age" min="18" max="70">
+        </p>
+        <p><label for="option">*What describes your<br> current role?</label>
+        
+        <input type="text" name="option" id="option">
+        </p>
+        <label for="recommend">*How likely is that you would recommend FreeCodeCamp to a friend ?</label>
+        
+           <br> <label><input type="radio" name="recommend" value="definitely">Definitely</label>
+           <br> <label><input type="radio" name="recommend" value="maybe">Maybe</label>
+           <br> <label><input type="radio" name="recommend" value="not sure">Not sure</label>
+            <br><br>
+        
+        <label for="like">*What would you like most in FCC?</label>
+        <select id="like" name="like">
+            <option value="challenges">Challenges</option>
+            <option value="solutions">Solutions</option>
+            <option value="learning">Learning</option>
+        </select>
+        <br><br>
+        
+         <label for="things">*What things would you be interested in learning?(check all that apply)</label>
+            <div id="things">
+            <label><input type="checkbox" name="things" value="front-end">Front-end Projects</label>
+            <br><label><input type="checkbox" name="things" value="back-end">Back-end Projects</label>
+            <br><label><input type="checkbox" name="things" value="Data Visualisation">Data Visualisation</label>
+            <br><label><input type="checkbox" name="things" value="Challenges">Challenges</label>
+            <br><label><input type="checkbox" name="things" value="Open Source community">Open Source community</label>
+            <br><label><input type="checkbox" name="things" value="Glitter-help rooms">Glitter-help rooms</label>
+            <br><label><input type="checkbox" name="things" value="Videos">Videos</label>
+            <br><label><input type="checkbox" name="things" value="City Meetups">City Meetups</label>
+            <br><label><input type="checkbox" name="things" value="WiKi">WiKi</label>
+            <br><label><input type="checkbox" name="things" value="Forum">Forum</label>
+            </div>
+          <br>
+            <button type="submit">Submit</button>
+       
+    </p>
+    </div>
+    </body>
+    </html>
